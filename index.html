@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sidebarix Demo</title>
+</head>
+<body>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style media="screen">
+		html,
+		body,
+		div {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+
+		body {
+			background-color: #0E2431;
+			color: #fff;
+		}
+
+		.sidebar-mobile-box {
+			background-color: #F9B248;
+			color: #0E2431;
+			border-right: 3px solid #E8D5B7;
+			height: 100%;
+		}
+
+		ul {
+			padding-left: 0px;
+		}
+
+		li {
+			text-align: center;
+			margin-bottom: 15px;
+			font-size: 25px;
+			cursor: pointer;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #E8D5B7;
+		}
+
+		li:last-child {
+			border-bottom: none;
+		}
+		h1{
+			text-align:center;
+			font-family: sans-serif;
+			color: #FC3A52;
+		}
+	</style>
+	<h1>Sidebarix jQuery Pluging </h1>
+	<!--Mobile SideBox Start-->
+	<div class="sidebar-mobile-box">
+		<ul>
+			<li>
+				<i class="fa fa-address-card-o" aria-hidden="true"></i>
+			</li>
+			<li>
+				<i class="fa fa-bath" aria-hidden="true"></i>
+			</li>
+			<li><i class="fa fa-handshake-o" aria-hidden="true"></i>
+			</li>
+			<li><i class="fa fa-microchip" aria-hidden="true"></i>
+			</li>
+			<li><i class="fa fa-telegram" aria-hidden="true"></i>
+			</li>
+			<li><i class="fa fa-user-o" aria-hidden="true"></i>
+			</li>
+			<li><i class="fa fa-wpexplorer" aria-hidden="true"></i>
+			</li>
+			<li><i class="fa fa-window-restore" aria-hidden="true"></i>
+			</li>
+			<li><i class="fa fa-bandcamp" aria-hidden="true"></i>
+			</li>
+		</ul>
+	</div>
+	<!--Mobile SideBox Finish-->
+
+
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		$('body').sidebarMenu({
+			//responsive: '992', //Eğer NULL ise mobile-desktop fark etmez göster
+			widthSize: '55', //Side menünün genişliği
+			selectorClass: '.sidebar-mobile-box', // Side Menü olarak göstermek istediğin class,id,tag
+			top: '0', //Yukarıdan verilecek boşluk
+			side: 'left', //Menünün tarafı
+		});
+	</script>
+</body>
+
+</html>
